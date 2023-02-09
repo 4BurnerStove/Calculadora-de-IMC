@@ -30,17 +30,17 @@ submit.onsubmit = event => {
   const result = IMC(Weight, Height)
 
   if (result < 18.5) {
-    IMCClassif = 'Abaixo do peso'
+    IMCClassif = 'abaixo do peso'
   } else if (result >= 18.5 && result < 25) {
-    IMCClassif = 'No peso normal'
+    IMCClassif = 'no peso normal'
   } else if (result >= 25 && result < 30) {
-    IMCClassif = 'Sobrepeso'
+    IMCClassif = 'com sobrepeso'
   } else if (result >= 30 && result < 35) {
-    IMCClassif = 'Obesidade Grau 1'
+    IMCClassif = 'com obesidade Grau I'
   } else if (result >= 35 && result < 40) {
-    IMCClassif = 'Obesidade Grau 2'
+    IMCClassif = 'com obesidade Grau II'
   } else {
-    IMCClassif = 'Obesidade Grau 3'
+    IMCClassif = 'com obesidade Grau III'
   }
 
   modal.wrapper.innerHTML = `O seu IMC é de ${result}, Você está ${IMCClassif}`
